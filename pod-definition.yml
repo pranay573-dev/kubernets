@@ -1,5 +1,6 @@
+---
 apiVersion: v1
-kind: pod
+kind: Pod
 metadata:
  name: Creating pod
  labels:
@@ -10,4 +11,3 @@ spec:
      image: nginx
      ports:
      - containersPort: 80
-      
