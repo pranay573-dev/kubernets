@@ -6,7 +6,7 @@
 ---
 apiVersion: vi
 
-kind: POD
+kind: Pod
 
 metadata:
     name: myapp-pod
@@ -18,7 +18,6 @@ spec:
         - name: Nginx-Container
           image: nginx
         
-
 # kubectl create -f pod-definition.yml    : This cmd is used to create the pod inside the worker nodes
 # kubectl get pods:                       : This cmd is used for to list the running pods
 # kubectl describe pod pod-definition.yml : To see the detail information about the pod
