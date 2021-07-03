@@ -1,13 +1,24 @@
+# Versions:
+# POD v1
+# Service v1
+# ReplicaSet apps/v1
+# Deployment apps/v1
 ---
-apiVersion: v1
-kind: Pod
+apiVersion: vi
+
+kind: POD
+
 metadata:
- name: Creating pod
- labels:
-  app: myapp
+    name: myapp-pod
+    labels: 
+        app: myapp
+
 spec:
-  containers:
-   - name: first-containers
-     image: nginx
-     ports:
-     - containersPort: 80
+    containers:
+        - name: Nginx-Container
+          image: nginx
+        
+
+# kubectl create -f pod-definition.yml    : This cmd is used to create the pod inside the worker nodes
+# kubectl get pods:                       : This cmd is used for to list the running pods
+# kubectl describe pod pod-definition.yml : To see the detail information about the pod
